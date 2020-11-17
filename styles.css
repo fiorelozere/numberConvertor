@@ -1,0 +1,36 @@
+.container {
+    height: 100vh;
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container div {
+    margin: 20px
+}
+
+.change-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#swap {
+    user-select: none;
+    cursor: pointer
+}
+
+#swap:active {
+    transform: translateY(3px);
+    transition: 0.3s;
+}
+
+@media only screen and (max-width: 600px) {
+   .container {
+       flex-direction: column;
+   }
+  }
+  
